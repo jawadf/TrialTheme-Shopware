@@ -1,0 +1,30 @@
+/*
+Top bar
+==================================================
+Contains styles for the top bar located at the top of the page.
+The top bar contains the language switcher, the currency switcher and the service menu.
+*/
+
+.top-bar {
+    background-color: $sw-color-black;
+
+    .container {
+        
+        .checkmarks {
+            color: $sw-color-white;
+
+            svg {
+                width: 15px;
+                height: 15px;
+
+                * {
+                    stroke: $sw-color-brand-primary !important;
+                }
+            }
+        }
+
+        .top-bar-nav-btn.btn {
+            color: $sw-color-white;
+        }
+    }
+}

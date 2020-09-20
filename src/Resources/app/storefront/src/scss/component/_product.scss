@@ -1,0 +1,40 @@
+.tns-controls {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        background: none;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &[data-controls="prev"] {
+            transform: translateX(-17px);
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.product-box {
+    border-color: transparent;
+}
+
+.btn-buy {
+    background-color: $sw-color-brand-primary;
+    border-color: $sw-color-brand-primary;
+
+    &:hover {
+        background-color: $sw-color-brand-primary-dark;
+        border-color: $sw-color-brand-primary-dark;
+    }
+}

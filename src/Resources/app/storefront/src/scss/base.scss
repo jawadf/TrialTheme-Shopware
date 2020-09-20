@@ -1,0 +1,36 @@
+/*
+ * Variables, Mixins, Functions
+ * ---------------------------- */
+ @import './abstract/variables.scss';
+ 
+ /*
+  * Skin variables
+  * ---------- */
+ 
+ /*
+  * Vendors
+  * ------- */
+
+ /*
+  * Base stuff
+  * ---------- */
+
+ /*
+  * Components
+  * ---------- */
+  @import 'component/slider';
+  @import 'component/product';
+  @import 'component/intro';
+
+ /*
+  * Layout-related sections
+  * ----------------------- */
+ @import 'layout/top-bar';
+ @import 'layout/header';
+ 
+ 
+ /*
+  * Page-specific styles
+  * -------------------- */
+ 
+ 

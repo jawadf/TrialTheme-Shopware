@@ -1,0 +1,44 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_header %}
+    <header class="header-main">
+        {% sw_include '@Storefront/storefront/layout/header/top-bar.html.twig' %}
+        {% block base_header_inner %}
+            <div class="header-content">
+                {{ parent() }}
+            </div>
+        {% endblock %}
+    </header>
+{% endblock %}
+
+{% block base_main %}
+    <main class="content-main">
+
+        {% block base_homepage_slider %}
+            {% sw_include '@Storefront/storefront/component/slider.html.twig' %}
+        {% endblock %}
+        
+        {% block base_homepage_intro %}
+            {% sw_include '@Storefront/storefront/component/intro.html.twig' %}
+        {% endblock %}
+
+        {% block base_flashbags %}
+            {{ parent() }}
+        {% endblock %}
+
+        {% block base_main_inner %}
+            {{ parent() }}
+        {% endblock %}
+    
+    </main>
+{% endblock %}
+
+{% block base_body_script %} 
+    {# Tiny Slider 2 - CDN #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    
+    {{ parent() }}
+{% endblock %}
+
+
+  

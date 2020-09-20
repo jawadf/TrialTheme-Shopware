@@ -1,0 +1,47 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+
+{% block layout_header %}
+    {% block layout_top_bar %}
+         
+    {% endblock %}
+
+    {% block layout_header_navigation %}
+        <div class="row align-items-center justify-content-between header-row">
+            {% block layout_header_logo %}
+                     {{ parent() }}
+            {% endblock %}
+
+            {% block layout_header_search %}
+                   
+            {% endblock %}
+
+            {% block layout_header_actions %}
+                <div class="col-12 order-1 col-sm-auto order-sm-2 header-actions-col">
+                    <div class="row no-gutters">
+                        {% block layout_header_navigation_toggle %}
+                            {{ parent() }}
+                        {% endblock %}
+
+                        {% block layout_header_search_toggle %}
+                            {{ parent() }}
+                        {% endblock %}
+
+                        <div class="col-auto header-search-container">
+                                <button>
+                                    {% sw_icon 'search' %}
+                                </button>
+                        </div>
+
+                        {% block layout_header_actions_account %}
+                           {{ parent() }}
+                        {% endblock %}
+
+                        {% block layout_header_actions_cart %}
+                            {{ parent() }}
+                        {% endblock %}
+                    </div>
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,12 @@
+.homepage-intro {
+    margin-top: 50px;
+
+    .intro-image {
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            max-height: 420px;
+        }
+    }
+}

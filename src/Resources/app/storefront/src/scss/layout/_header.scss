@@ -1,0 +1,52 @@
+/*
+Header
+==================================================
+Contains custom styles for the header at the top of the page.
+The header contains the shop logo, the search form and various actions like the offcanvas cart button.
+*/
+
+header {
+    .header-content {
+        background-color: $sw-color-brand-primary;
+        padding: 1rem 0;
+
+        .header-actions-col {
+            .header-search-container {
+
+                button {
+                    border: none;
+                    background: none;
+                    height: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    svg {
+                        top: 0;
+                    }
+                }
+                
+            }
+
+            svg {
+                * {
+                    fill: $sw-color-white;
+                }
+            }
+
+            .header-cart-btn {
+                .header-cart-total {
+                    color: $sw-color-black;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(sm) { 
+    .header-row {
+        padding-bottom: 0;
+    }
+ }

@@ -1,0 +1,28 @@
+{% sw_extends '@Storefront/storefront/layout/header/top-bar.html.twig' %}
+
+{% block layout_header_top_bar %}
+    <div class="top-bar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col checkmarks">{% sw_icon 'checkmark-circle' %} Kostenloser Versand</div>
+                <div class="col checkmarks">{% sw_icon 'checkmark-circle' %} Rasche Lieferung</div>
+                <div class="col checkmarks">{% sw_icon 'checkmark-circle' %} 10.000 Produkte</div>
+                <div class="col">
+                    <nav class="top-bar-nav">
+                        {% block layout_header_top_bar_language %}
+                            {% sw_include '@Storefront/storefront/layout/header/actions/language-widget.html.twig' %}
+                        {% endblock %}
+
+                        {% block layout_header_top_bar_currency %}
+                            {% sw_include '@Storefront/storefront/layout/header/actions/currency-widget.html.twig' %}
+                        {% endblock %}
+
+                        {% block layout_header_top_bar_service %}
+                            {% sw_include '@Storefront/storefront/layout/header/actions/service-menu-widget.html.twig' %}
+                        {% endblock %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

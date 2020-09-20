@@ -1,0 +1,24 @@
+
+{% sw_extends '@Storefront/storefront/component/product/listing.html.twig' %}
+
+{% block element_product_listing_pagination_nav_actions %}
+{% endblock %}
+
+{% block element_product_listing_col %}
+    <div class="product-slider">
+       {% for product in searchResult %}
+            <div class="cms-listing-col"> 
+                {% block element_product_listing_box %}
+                    {% sw_include '@Storefront/storefront/component/product/card/box.html.twig' with {
+                        'layout': boxLayout,
+                        'displayMode': displayMode
+                    } %}
+                {% endblock %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+{% block element_product_listing_pagination_nav_bottom %}
+{% endblock %}

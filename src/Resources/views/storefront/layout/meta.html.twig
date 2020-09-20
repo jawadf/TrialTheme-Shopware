@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+
+{% block layout_head_stylesheet %}
+   {# Tiny Slider 2 Stylesheet #}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+   {{ parent() }}
+{% endblock %}
+
+
+{% block layout_head_javascript_feature %}
+    {{ parent() }} 
+{% endblock %}

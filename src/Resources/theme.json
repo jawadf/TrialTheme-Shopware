@@ -1,0 +1,37 @@
+{
+  "name": "TrialTheme",
+  "author": "Jawad F",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@TrialTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/trial-theme.js"
+  ],
+  "asset": [
+    "app/storefront/src/assets"
+  ],
+  "config": {
+      "fields": {
+          "sw-logo-desktop": {
+              "type": "media",
+              "value": "bundles/trialtheme/logo/logo.svg"
+          },
+          "sw-logo-tablet": {
+              "type": "media",
+              "value": "bundles/trialtheme/logo/logo.svg"
+          },
+          "sw-logo-mobile": {
+              "type": "media",
+              "value": "bundles/trialtheme/logo/logo.svg"
+            }
+        }
+    }
+}
